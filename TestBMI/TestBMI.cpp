@@ -2,10 +2,12 @@
 #include<iomanip>
 using namespace std;
 
+//BMIを求める
 double GetBmi(double weight, double height) {
 	return weight / height / height;
 }
 
+//肥満度を求める
 int getObesity(double bmi) {
 	if (bmi < 18.5) {
 		return -1;
